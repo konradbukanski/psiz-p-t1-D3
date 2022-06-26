@@ -7,7 +7,9 @@ using namespace std;
 
 List* initList(void)
 {
+	
 	List* pRoot = (List*)malloc(sizeof(*pRoot));
+	
 
 	if (pRoot != NULL)
 	{
@@ -16,7 +18,8 @@ List* initList(void)
 	}	
 		else if (pRoot == NULL)
 			{ 			
-				cout << "Insufficient memory available." << endl;
+				cstd::cout << "Puste" << std::endl;
+				return NULL;
 			}	
 				else
 					{
